@@ -36,6 +36,10 @@
         .normal-temp {
             color: #6930c3; /* Default color for normal temperature */
         }
+        .country {
+            font-style: italic;
+            color: #6c5ce7; /* Purple color for the country */
+        }
     </style>
 </head>
 <body>
@@ -49,7 +53,9 @@
         {% else %}
             <span class="normal-temp">{{ temperature }}</span> Celsius
         {% endif %}
+
     </p>
+    <p>The Country: <span class="country">{{ country }}</span></p>
 </body>
 </html>
 
