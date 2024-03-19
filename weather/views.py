@@ -11,12 +11,13 @@ from geopy.exc import GeocoderTimedOut, GeocoderUnavailable
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 # Function to get country information for a city
 def get_country(city_name):
-    geolocator = Nominatim(user_agent="my_weather_app_v1")
-    location = geolocator.geocode(city_name)
-    if location:
-        return location.address.split(",")[-1].strip()
-    else:
-        return None
+    pass
+    # geolocator = Nominatim(user_agent="my_weather_app_v1")
+    # location = geolocator.geocode(city_name)
+    # if location:
+    #     return location.address.split(",")[-1].strip()
+    # else:
+    #     return None
 # View to get weather and country information
 def get_weather(request):
     if request.method == 'POST':
