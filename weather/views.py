@@ -9,15 +9,18 @@ from geopy.exc import GeocoderTimedOut, GeocoderUnavailable
 
 # Constants
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
+
 # Function to get country information for a city
 def get_country(city_name):
-    pass
-    # geolocator = Nominatim(user_agent="my_weather_app_v1")
-    # location = geolocator.geocode(city_name)
-    # if location:
-    #     return location.address.split(",")[-1].strip()
-    # else:
-    #     return None
+    api_url = 'http://127.0.0.1:8000/api/country-language/' 
+    response = requests.post(api_url, json={'city_name': city_name})
+    if response.status_code == 200:
+        data = response.json()
+        country_name = data.get('country_name')
+        language = data.get('language')
+        return country_name, language
+    else:
+        return None, None
 # View to get weather and country information
 def get_weather(request):
     if request.method == 'POST':
