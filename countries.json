@@ -1,0 +1,395 @@
+country_languages = {
+
+    "AF": {"name": "Afghanistan", "languages": ["Pashto", "Dari"]},
+    
+    "AL": {"name": "Albania", "languages": ["Albanian"]},
+    
+    "DZ": {"name": "Algeria", "languages": ["Arabic", "Berber"]},
+    
+    "AD": {"name": "Andorra", "languages": ["Catalan"]},
+    
+    "AO": {"name": "Angola", "languages": ["Portuguese"]},
+    
+    "AG": {"name": "Antigua and Barbuda", "languages": ["English"]},
+    
+    "AR": {"name": "Argentina", "languages": ["Spanish"]},
+    
+    "AM": {"name": "Armenia", "languages": ["Armenian"]},
+    
+    "AU": {"name": "Australia", "languages": ["English"]},
+    
+    "AT": {"name": "Austria", "languages": ["German"]},
+    
+    "AZ": {"name": "Azerbaijan", "languages": ["Azerbaijani"]},
+    
+    "BS": {"name": "Bahamas", "languages": ["English"]},
+    
+    "BH": {"name": "Bahrain", "languages": ["Arabic"]},
+    
+    "BD": {"name": "Bangladesh", "languages": ["Bengali"]},
+    
+    "BB": {"name": "Barbados", "languages": ["English"]},
+    
+    "BY": {"name": "Belarus", "languages": ["Belarusian"]},
+    
+    "BE": {"name": "Belgium", "languages": ["Dutch", "French", "German"]},
+    
+    "BZ": {"name": "Belize", "languages": ["English"]},
+    
+    "BJ": {"name": "Benin", "languages": ["French"]},
+    
+    "BT": {"name": "Bhutan", "languages": ["Dzongkha"]},
+    
+    "BO": {"name": "Bolivia", "languages": ["Spanish"]},
+    
+    "BA": {"name": "Bosnia and Herzegovina", "languages": ["Bosnian", "Croatian", "Serbian"]},
+    
+    "BW": {"name": "Botswana", "languages": ["English"]},
+    
+    "BR": {"name": "Brazil", "languages": ["Portuguese"]},
+    
+    "BN": {"name": "Brunei", "languages": ["Malay"]},
+    
+    "BG": {"name": "Bulgaria", "languages": ["Bulgarian"]},
+    
+    "BF": {"name": "Burkina Faso", "languages": ["French"]},
+    
+    "BI": {"name": "Burundi", "languages": ["Kirundi", "French", "English"]},
+    
+    "KH": {"name": "Cambodia", "languages": ["Khmer"]},
+    
+    "CM": {"name": "Cameroon", "languages": ["English", "French"]},
+    
+    "CA": {"name": "Canada", "languages": ["English", "French"]},
+    
+    "CV": {"name": "Cape Verde", "languages": ["Portuguese"]},
+    
+    "CF": {"name": "Central African Republic", "languages": ["French", "Sango"]},
+    
+    "TD": {"name": "Chad", "languages": ["French", "Arabic"]},
+    
+    "CL": {"name": "Chile", "languages": ["Spanish"]},
+    
+    "CN": {"name": "China", "languages": ["Mandarin"]},
+    
+    "CO": {"name": "Colombia", "languages": ["Spanish"]},
+    
+    "KM": {"name": "Comoros", "languages": ["Arabic", "French", "Comorian"]},
+    
+    "CD": {"name": "Congo, Democratic Republic of the", "languages": ["French"]},
+    
+    "CG": {"name": "Congo, Republic of the", "languages": ["French"]},
+    
+    "CR": {"name": "Costa Rica", "languages": ["Spanish"]},
+    
+    "CI": {"name": "Cote d'Ivoire", "languages": ["French"]},
+    
+    "HR": {"name": "Croatia", "languages": ["Croatian"]},
+    
+    "CU": {"name": "Cuba", "languages": ["Spanish"]},
+    
+    "CY": {"name": "Cyprus", "languages": ["Greek", "Turkish"]},
+    
+    "CZ": {"name": "Czech Republic", "languages": ["Czech"]},
+    
+    "DK": {"name": "Denmark", "languages": ["Danish"]},
+    
+    "DJ": {"name": "Djibouti", "languages": ["French", "Arabic"]},
+    
+    "DM": {"name": "Dominica", "languages": ["English"]},
+    
+    "DO": {"name": "Dominican Republic", "languages": ["Spanish"]},
+    
+    "TL": {"name": "East Timor", "languages": ["Portuguese", "Tetum"]},
+    
+    "EC": {"name": "Ecuador", "languages": ["Spanish"]},
+    
+    "EG": {"name": "Egypt", "languages": ["Arabic"]},
+    
+    "SV": {"name": "El Salvador", "languages": ["Spanish"]},
+    
+    "GQ": {"name": "Equatorial Guinea", "languages": ["Spanish", "French", "Portuguese"]},
+    
+    "ER": {"name": "Eritrea", "languages": ["Tigrinya", "Arabic", "English"]},
+    
+    "EE": {"name": "Estonia", "languages": ["Estonian"]},
+    
+    "SZ": {"name": "Eswatini", "languages": ["Swati", "English"]},
+    
+    "ET": {"name": "Ethiopia", "languages": ["Amharic"]},
+    
+    "FJ": {"name": "Fiji", "languages": ["English", "Fijian", "Hindi"]},
+    
+    "FI": {"name": "Finland", "languages": ["Finnish", "Swedish"]},
+    
+    "FR": {"name": "France", "languages": ["French"]},
+    
+    "GA": {"name": "Gabon", "languages": ["French"]},
+    
+    "GM": {"name": "Gambia", "languages": ["English"]},
+    
+    "GE": {"name": "Georgia", "languages": ["Georgian"]},
+    
+    "DE": {"name": "Germany", "languages": ["German"]},
+    
+    "GH": {"name": "Ghana", "languages": ["English"]},
+    
+    "GR": {"name": "Greece", "languages": ["Greek"]},
+    
+    "GD": {"name": "Grenada", "languages": ["English"]},
+    
+    "GT": {"name": "Guatemala", "languages": ["Spanish"]},
+    
+    "GN": {"name": "Guinea", "languages": ["French"]},
+    
+    "GW": {"name": "Guinea-Bissau", "languages": ["Portuguese"]},
+    
+    "GY": {"name": "Guyana", "languages": ["English"]},
+    
+    "HT": {"name": "Haiti", "languages": ["French", "Haitian Creole"]},
+    
+    "HN": {"name": "Honduras", "languages": ["Spanish"]},
+    
+    "HU": {"name": "Hungary", "languages": ["Hungarian"]},
+    
+    "IS": {"name": "Iceland", "languages": ["Icelandic"]},
+    
+    "IN": {"name": "India", "languages": ["Hindi", "English"]},
+    
+    "ID": {"name": "Indonesia", "languages": ["Indonesian"]},
+    
+    "IR": {"name": "Iran", "languages": ["Persian"]},
+    
+    "IQ": {"name": "Iraq", "languages": ["Arabic", "Kurdish"]},
+    
+    "IE": {"name": "Ireland", "languages": ["Irish", "English"]},
+    
+    "IL": {"name": "Israel", "languages": ["Hebrew"]},
+    
+    "IT": {"name": "Italy", "languages": ["Italian"]},
+    
+    "JM": {"name": "Jamaica", "languages": ["English"]},
+    
+    "JP": {"name": "Japan", "languages": ["Japanese"]},
+    
+    "JO": {"name": "Jordan", "languages": ["Arabic"]},
+    
+    "KZ": {"name": "Kazakhstan", "languages": ["Kazakh"]},
+    
+    "KE": {"name": "Kenya", "languages": ["Swahili", "English"]},
+    
+    "KI": {"name": "Kiribati", "languages": ["English", "Gilbertese"]},
+    
+    "KP": {"name": "Korea, North", "languages": ["Korean"]},
+    
+    "KR": {"name": "Korea, South", "languages": ["Korean"]},
+    
+    "XK": {"name": "Kosovo", "languages": ["Albanian", "Serbian"]},
+    
+    "KW": {"name": "Kuwait", "languages": ["Arabic"]},
+    
+    "KG": {"name": "Kyrgyzstan", "languages": ["Kyrgyz", "Russian"]},
+    
+    "LA": {"name": "Laos", "languages": ["Lao"]},
+    
+    "LV": {"name": "Latvia", "languages": ["Latvian"]},
+    
+    "LB": {"name": "Lebanon", "languages": ["Arabic"]},
+    
+    "LS": {"name": "Lesotho", "languages": ["English", "Sesotho"]},
+    
+    "LR": {"name": "Liberia", "languages": ["English"]},
+    
+    "LY": {"name": "Libya", "languages": ["Arabic"]},
+    
+    "LI": {"name": "Liechtenstein", "languages": ["German"]},
+    
+    "LT": {"name": "Lithuania", "languages": ["Lithuanian"]},
+    
+    "LU": {"name": "Luxembourg", "languages": ["Luxembourgish", "French", "German"]},
+    
+    "MG": {"name": "Madagascar", "languages": ["Malagasy", "French"]},
+    
+    "MW": {"name": "Malawi", "languages": ["English", "Chichewa"]},
+    
+    "MY": {"name": "Malaysia", "languages": ["Malay"]},
+    
+    "MV": {"name": "Maldives", "languages": ["Dhivehi"]},
+    
+    "ML": {"name": "Mali", "languages": ["French"]},
+    
+    "MT": {"name": "Malta", "languages": ["Maltese", "English"]},
+    
+    "MH": {"name": "Marshall Islands", "languages": ["English", "Marshallese"]},
+    
+    "MR": {"name": "Mauritania", "languages": ["Arabic"]},
+    
+    "MU": {"name": "Mauritius", "languages": ["English", "French"]},
+    
+    "MX": {"name": "Mexico", "languages": ["Spanish"]},
+    
+    "FM": {"name": "Micronesia", "languages": ["English"]},
+    
+    "MD": {"name": "Moldova", "languages": ["Moldovan (Romanian)"]},
+    
+    "MC": {"name": "Monaco", "languages": ["French"]},
+    
+    "MN": {"name": "Mongolia", "languages": ["Mongolian"]},
+    
+    "ME": {"name": "Montenegro", "languages": ["Serbian", "Montenegrin"]},
+    
+    "MA": {"name": "Morocco", "languages": ["Arabic", "Berber"]},
+    
+    "MZ": {"name": "Mozambique", "languages": ["Portuguese"]},
+    
+    "MM": {"name": "Myanmar (Burma)", "languages": ["Burmese"]},
+    
+    "NA": {"name": "Namibia", "languages": ["English"]},
+    
+    "NR": {"name": "Nauru", "languages": ["English", "Nauruan"]},
+    
+    "NP": {"name": "Nepal", "languages": ["Nepali"]},
+    
+    "NL": {"name": "Netherlands", "languages": ["Dutch"]},
+    
+    "NZ": {"name": "New Zealand", "languages": ["English", "Maori"]},
+    
+    "NI": {"name": "Nicaragua", "languages": ["Spanish"]},
+    
+    "NE": {"name": "Niger", "languages": ["French"]},
+    
+    "NG": {"name": "Nigeria", "languages": ["English"]},
+    
+    "MK": {"name": "North Macedonia", "languages": ["Macedonian"]},
+    
+    "NO": {"name": "Norway", "languages": ["Norwegian"]},
+    
+    "OM": {"name": "Oman", "languages": ["Arabic"]},
+    
+    "PK": {"name": "Pakistan", "languages": ["Urdu", "English"]},
+    
+    "PW": {"name": "Palau", "languages": ["English"]},
+    
+    "PA": {"name": "Panama", "languages": ["Spanish"]},
+    
+    "PG": {"name": "Papua New Guinea", "languages": ["English", "Tok Pisin", "Hiri Motu"]},
+    
+    "PY": {"name": "Paraguay", "languages": ["Spanish", "Guarani"]},
+    
+    "PE": {"name": "Peru", "languages": ["Spanish"]},
+    
+    "PH": {"name": "Philippines", "languages": ["Filipino", "English"]},
+    
+    "PL": {"name": "Poland", "languages": ["Polish"]},
+    
+    "PT": {"name": "Portugal", "languages": ["Portuguese"]},
+    
+    "QA": {"name": "Qatar", "languages": ["Arabic"]},
+    
+    "RO": {"name": "Romania", "languages": ["Romanian"]},
+    
+    "RU": {"name": "Russia", "languages": ["Russian"]},
+    
+    "RW": {"name": "Rwanda", "languages": ["Kinyarwanda", "English", "French", "Swahili"]},
+    
+    "KN": {"name": "Saint Kitts and Nevis", "languages": ["English"]},
+    
+    "LC": {"name": "Saint Lucia", "languages": ["English"]},
+    
+    "VC": {"name": "Saint Vincent and the Grenadines", "languages": ["English"]},
+    
+    "WS": {"name": "Samoa", "languages": ["Samoan", "English"]},
+    
+    "SM": {"name": "San Marino", "languages": ["Italian"]},
+    
+    "ST": {"name": "Sao Tome and Principe", "languages": ["Portuguese"]},
+    
+    "SA": {"name": "Saudi Arabia", "languages": ["Arabic"]},
+    
+    "SN": {"name": "Senegal", "languages": ["French"]},
+    
+    "RS": {"name": "Serbia", "languages": ["Serbian"]},
+    
+    "SC": {"name": "Seychelles", "languages": ["Seychellois Creole", "English", "French"]},
+    
+    "SL": {"name": "Sierra Leone", "languages": ["English"]},
+    
+    "SG": {"name": "Singapore", "languages": ["Malay", "Mandarin", "Tamil", "English"]},
+    
+    "SK": {"name": "Slovakia", "languages": ["Slovak"]},
+    
+    "SI": {"name": "Slovenia", "languages": ["Slovene"]},
+    
+    "SB": {"name": "Solomon Islands", "languages": ["English"]},
+    
+    "SO": {"name": "Somalia", "languages": ["Somali", "Arabic"]},
+    
+    "ZA": {"name": "South Africa", "languages": ["IsiZulu", "IsiXhosa", "Afrikaans", "Sepedi", "English", "Setswana", "Sesotho", "Xitsonga", "siSwati", "Tshivenda", "isiNdebele", "Sign language"]},
+    
+    "SS": {"name": "South Sudan", "languages": ["English"]},
+    
+    "ES": {"name": "Spain", "languages": ["Spanish"]},
+    
+    "LK": {"name": "Sri Lanka", "languages": ["Sinhala", "Tamil"]},
+    
+    "SD": {"name": "Sudan", "languages": ["Arabic", "English"]},
+    
+    "SR": {"name": "Suriname", "languages": ["Dutch"]},
+    
+    "SE": {"name": "Sweden", "languages": ["Swedish"]},
+    
+    "CH": {"name": "Switzerland", "languages": ["German", "French", "Italian", "Romansh"]},
+    
+    "SY": {"name": "Syria", "languages": ["Arabic"]},
+    
+    "TW": {"name": "Taiwan", "languages": ["Mandarin"]},
+    
+    "TJ": {"name": "Tajikistan", "languages": ["Tajik"]},
+    
+    "TZ": {"name": "Tanzania", "languages": ["Swahili", "English"]},
+    
+    "TH": {"name": "Thailand", "languages": ["Thai"]},
+    
+    "TG": {"name": "Togo", "languages": ["French"]},
+    
+    "TO": {"name": "Tonga", "languages": ["Tongan", "English"]},
+    
+    "TT": {"name": "Trinidad and Tobago", "languages": ["English"]},
+    
+    "TN": {"name": "Tunisia", "languages": ["Arabic"]},
+    
+    "TR": {"name": "Turkey", "languages": ["Turkish"]},
+    
+    "TM": {"name": "Turkmenistan", "languages": ["Turkmen"]},
+    
+    "TV": {"name": "Tuvalu", "languages": ["English", "Tuvaluan"]},
+    
+    "UG": {"name": "Uganda", "languages": ["English", "Swahili"]},
+    
+    "UA": {"name": "Ukraine", "languages": ["Ukrainian"]},
+    
+    "AE": {"name": "United Arab Emirates", "languages": ["Arabic"]},
+    
+    "GB": {"name": "United Kingdom", "languages": ["English"]},
+    
+    "US": {"name": "United States", "languages": ["English"]},
+    
+    "UY": {"name": "Uruguay", "languages": ["Spanish"]},
+    
+    "UZ": {"name": "Uzbekistan", "languages": ["Uzbek", "Russian"]},
+    
+    "VU": {"name": "Vanuatu", "languages": ["Bislama", "English", "French"]},
+    
+    "VA": {"name": "Vatican City", "languages": ["Latin", "Italian"]},
+    
+    "VE": {"name": "Venezuela", "languages": ["Spanish"]},
+    
+    "VN": {"name": "Vietnam", "languages": ["Vietnamese"]},
+    
+    "YE": {"name": "Yemen", "languages": ["Arabic"]},
+    
+    "ZM": {"name": "Zambia", "languages": ["English"]},
+    
+    "ZW": {"name": "Zimbabwe", "languages": ["English", "Shona", "Sindebele"]}
+    
+    }
