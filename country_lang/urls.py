@@ -1,5 +1,6 @@
 from django.urls import path
-from . import views
+from .views import CountryLanguageView
+
 urlpatterns = [
-    path('', views.YourView, name='YourView'),
+    path('api/country-language/', CountryLanguageView.as_view(), name='country_language'),
 ]
