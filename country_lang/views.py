@@ -26,3 +26,12 @@ class CountryLanguageView(APIView):
                 return Response({'error': 'Country with specified code not found in the database.'}, status=status.HTTP_404_NOT_FOUND)
         else:
             return Response({'error': 'Failed to fetch data from external API.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        
+    
+    def get(self, request, *args, **kwargs):
+    
+    # getting a list of all tasks
+        tasks = Countries.objects.all()#filter(completed=False)
+        # feed all tasks into serializer
+        serializer = CountriesSerializer(tasks, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)

@@ -44,17 +44,26 @@
 <body>
     <h1>Weather Information</h1>
     <p>The weather: <span class="weather">{{ weather }}</span></p>
-    <p>Temperature: 
-        {% if temperature < 10 %}
-            <span class="low-temp">{{ temperature }}</span> Celsius
-        {% elif temperature > 20 %}
-            <span class="high-temp">{{ temperature }}</span> Celsius
-        {% else %}
-            <span class="normal-temp">{{ temperature }}</span> Celsius
-        {% endif %}
-    </p>
+    <div>
+        <p>Temperature: 
+            {% if temperature < 10 %}
+                <span class="low-temp">{{ temperature }}</span> °C
+            {% elif temperature > 20 %}
+                <span class="high-temp">{{ temperature }}</span> °C
+            {% else %}
+                <span class="normal-temp">{{ temperature }}</span> °C
+            {% endif %}
+        </p>
+        <p>Maximum Temperature: <span class="weather">{{ temp_max}}</span></p>
+        <p>Minimum Temperature : <span class="weather">{{ temp_min }}</span></p>
+    </div>
+    <p>Humidity: <span class="weather">{{ humidity }}</span></p>
+    <p>Wind : <span class="weather">{{ wind_speed }}</span></p>
+    <p>Pressure: <span class="weather">{{ pressure }}</span></p>
+    <div>
     <p>The Country: <span class="country">{{ country }}</span></p>
     <p>Language: <span class="language">{{ language }}</span></p>
+    </div>
 </body>
 </html>
 
