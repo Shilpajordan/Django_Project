@@ -37,7 +37,7 @@ def get_weather(request):
             if country_data:
                 country_name = country_data.get('country_name')
                 language = country_data.get('languages')
-                return render(request, 'weather/weather.html', {'weather': weather, 'temperature': temperature, 'country': country_name, 'language': language,'humidity': humidity,'temp_max': max_temp,'temp_min': min_temp, 'wind_speed': wind_speed, 'pressure': pressure})
+                return render(request, 'weather/weather.html', {'weather': weather, 'temperature': temperature, 'country': country_name, 'language': language,'humidity': humidity,'temp_max': max_temp,'temp_min': min_temp, 'wind_speed': wind_speed, 'pressure': pressure,'city':city})
             else:
                 error_message = f'Country information for {city} not found'
                 return render(request, 'weather/error.html', {'error_message': error_message})
