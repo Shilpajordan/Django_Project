@@ -6,57 +6,209 @@
     <title>Weather Information</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Montserrat", Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #2C3E50;
+            color: #ffffff;
             text-align: center;
         }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        .box {
+            background-color: #e8ebfd;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box1 {
+            background-color: #e8ebfd;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-right: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Add this line */
+            flex: 1;
+        }
+
+        .box2 {
+            background-color: #e8ebfd;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+            justify-content: center;
+        }
+
+        .box3 {
+            background-color: #e8ebfd;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+            justify-content: center;
+        }
+
+        .box4 {
+            background-color: #e8ebfd;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-right: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+            justify-content: center;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+
+        .inner-flex {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 100px;
+        }
+
+        .box1 p {
+            margin: 0;
+            text-align: center;
+        }
+
         h1 {
-            margin-top: 50px;
-            color: #333;
+            color: #ffffff;
             text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+            margin: 80px;
+            font-size: 50px;
         }
+
         p {
-            font-size: 18px;
+            font-size: 20px;
             margin-bottom: 10px;
-            color: #555;
+            color: #000000;
+            text-align: center;
         }
+
+        h2 {
+            text-transform: capitalize;
+        }
+
         .weather {
             font-weight: bold;
             color: #007bff;
         }
+
+        .low-temp, .high-temp, .normal-temp, .weather, .country, .language {
+            display: inline-block;
+        }
+
         .low-temp {
-            color: #00b894; /* Green for low temperature */
+            color: #00b894;
+            font-size: 40px;
         }
+
         .high-temp {
-            color: #d63031; /* Red for high temperature */
+            color: #d63031;
+            font-size: 40px;
         }
+
         .normal-temp {
-            color: #6930c3; /* Default color for normal temperature */
+            color: #6930c3;
+            font-size: 40px;
         }
+
         .country {
             font-style: italic;
-            color: #6c5ce7; /* Purple color for the country */
+            color: #6c5ce7;
         }
     </style>
 </head>
 <body>
-    <h1>Weather Information</h1>
-    <p>The weather: <span class="weather">{{ weather }}</span></p>
-    <p>Temperature: 
-        {% if temperature < 10 %}
-            <span class="low-temp">{{ temperature }}</span> Celsius
-        {% elif temperature > 20 %}
-            <span class="high-temp">{{ temperature }}</span> Celsius
-        {% else %}
-            <span class="normal-temp">{{ temperature }}</span> Celsius
-        {% endif %}
-    </p>
-    <p>The Country: <span class="country">{{ country }}</span></p>
-    <p>Language: <span class="language">{{ language }}</span></p>
+    <h1>CITY-INFO APP</h1>
+    <h2><span>{{ city }}:</span></h2>
+    <div class="container">
+        <div class="box">
+            <p><strong>CURRENT FORECAST:</strong> <span class="weather">{{ weather }}</span></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="flex-container">
+            <div class="box1">
+                <div class="inner-flex">
+                    <p><strong>TEMPERATURE:</strong></p>
+                    <p>
+                        {% if temperature < 10 %}
+                            <span class="low-temp">{{ temperature }} °C</span>
+                        {% elif temperature > 20 %}
+                            <span class="high-temp">{{ temperature }} °C</span>
+                        {% else %}
+                            <span class="normal-temp">{{ temperature }} °C</span>
+                        {% endif %}
+                    </p>
+                </div>
+            </div>
+            <div class="box2">
+                <p><strong>MAXIMUM TEMPERATURE:</strong> <span class="weather">{{ temp_max }} °C</span></p>
+                <p><strong>MINIMUM TEMPERATURE:</strong> <span class="weather">{{ temp_min }} °C</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="flex-container">
+            <div class="box3">
+                <p><strong>HUMIDITY:</strong></p>
+                <p><span class="weather">{{ humidity }} %</span></p>
+            </div>
+            <div class="box3">
+                <p><strong>WIND SPEED:</strong></p>
+                <p><span class="weather">{{ wind_speed }} kmh</span></p>
+            </div>
+            <div class="box4">
+                <p><strong>PRESSURE:</strong></p>
+                <p><span class="weather">{{ pressure }} hPa</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="flex-container">
+            <div class="box3 inner-flex">
+                <p><strong>COUNTRY:</strong></p>
+                <p><span class="country">{{ country }}</span></p>
+            </div>
+            <div class="box4 inner-flex">
+                <p><strong>LANGUAGES:</strong></p>
+                <p><span class="language">{{ language }}</span></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-
-
-

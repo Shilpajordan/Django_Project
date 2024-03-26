@@ -7,20 +7,46 @@
     <title>Weather App</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Montserrat", Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #2C3E50;
+            color: #ffffff;
+            text-align: center;
         }
         h1 {
-            text-align: center;
-            margin-top: 50px;
+            color: #ffffff;
+            text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+            margin: 80px;
+            font-size: 50px;
         }
+        h2 {
+            color: black;
+            margin: 50px;
+        }
+        .box1 {
+            background-color: #e8ebfd;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-right: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Add this line */
+            flex: 1;
+            width: 80%;
+            margin: 20px auto;
+            text-align: left;
+        }
+
         form {
             text-align: center;
             margin-top: 20px;
+            margin-bottom: 40px;
         }
         label {
+            color: black;
             font-size: 18px;
             margin-right: 10px;
         }
@@ -42,12 +68,15 @@
     </style>
 </head>
 <body>
-    <h1>Get Weather Information</h1>
-    <form method="post">
-        {% csrf_token %}
-        <label for="city">Enter a city name:</label>
-        <input type="text" id="city" name="city" required>
-        <button type="submit">Get Weather</button>
-    </form>
+    <h1>CITY-INFO APP</h1>
+    <div class="box1">
+        <h2>Get City Information</h2>
+        <form method="post">
+            {% csrf_token %}
+            <label for="city">Enter a city name:</label>
+            <input type="text" id="city" name="city" required>
+            <button type="submit">Get Info</button>
+        </form>
+    </div>
 </body>
 </html>

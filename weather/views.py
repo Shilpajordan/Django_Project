@@ -6,7 +6,7 @@ import os
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 
 def get_country(city):
-    api_url = 'http://127.0.0.1:8000/api/country-language/'
+    #api_url = 'http://127.0.0.1:8000/api/country-language/'
     api_url = 'http://127.0.0.1:8000/country_lang/api/country-language/'
     response = requests.post(api_url, json={'city_name': city})
 
@@ -28,11 +28,16 @@ def get_weather(request):
             weather = weather_data['weather'][0]['description']
             temperature = round(weather_data['main']['temp'] - 273.15, 2)
             country_data = get_country(city)
+            humidity = weather_data['main']['humidity']
+            max_temp = round(weather_data['main']['temp_max'] - 273.15, 2)
+            min_temp = round(weather_data['main']['temp_min'] - 273.15, 2)
+            wind_speed = weather_data['wind']['speed']
+            pressure = weather_data['main']['pressure']
             
             if country_data:
                 country_name = country_data.get('country_name')
                 language = country_data.get('languages')
-                return render(request, 'weather/weather.html', {'weather': weather, 'temperature': temperature, 'country': country_name, 'language': language})
+                return render(request, 'weather/weather.html', {'weather': weather, 'temperature': temperature, 'country': country_name, 'language': language,'humidity': humidity,'temp_max': max_temp,'temp_min': min_temp, 'wind_speed': wind_speed, 'pressure': pressure, 'city': city})
             else:
                 error_message = f'Country information for {city} not found'
                 return render(request, 'weather/error.html', {'error_message': error_message})
